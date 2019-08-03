@@ -7,17 +7,17 @@
 		"login": "/login",
 		"delay": "?delay=3"
 	},
-	"method_list": {
-		"0": "get",
-		"1": "post",
-		"2": "put",
-		"3": "patch",
-		"4": "delete"
-	},
-	"user_params": {
-		"0": "name",
-		"1": "job",
-		"2": "email",
-		"3": "password"
-	}
+	"method_list": [
+		"get",
+		"post",
+		"put",
+		"patch",
+		"delete"
+	],
+	"user_params": [
+		"name",
+		"job",
+		"email",
+		"password"
+	]
 }

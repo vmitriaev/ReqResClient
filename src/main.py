@@ -5,7 +5,7 @@ while True:
     m = input('Type method (GET, POST, PUT, PATCH, DELETE), or STOP for exit: ')
     if m.lower() in ('get', 'delete'):
         u = input('Endpoint: https://reqres.in/api/')
-        r = Req(m, u, '{}')
+        r = Req(m, u)
         print(r.send())
 
     elif m.lower() in ('post', 'put', 'patch'):

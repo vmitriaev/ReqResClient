@@ -6,7 +6,7 @@ from src.res import res
 class Req():
     '''Экземпляром класса является объект, имеющий атрибуты для отправки запроса: method, url, json'''
 
-    def __init__(self, meth, url, body):
+    def __init__(self, meth, url, body=None):
         '''Инициализация объекта класса Req'''
         self.meth = meth
         self.url = url
