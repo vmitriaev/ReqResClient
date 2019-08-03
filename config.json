@@ -19,5 +19,8 @@
 		"job",
 		"email",
 		"password"
+	],
+	"stats": [
+		"https://python-scripts.com/json"
 	]
 }
