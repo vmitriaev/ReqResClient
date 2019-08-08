@@ -1,5 +1,5 @@
 {
-	"url_list": {
+	"endpoint_list": {
 		"basic_url": "https://reqres.in/api",
 		"user_list": "/users",
 		"resource_list": "/unknown",
@@ -22,5 +22,11 @@
 	],
 	"stats": [
 		"https://python-scripts.com/json"
+	],
+	"stop_words": [
+		"stop",
+		"exit",
+		"0",
+		"break"
 	]
 }

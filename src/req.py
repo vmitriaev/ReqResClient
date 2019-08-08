@@ -1,6 +1,9 @@
-import requests
+import requests, json
 from src.errors import error
 from src.res import res
+
+with open("config.json") as config_file:
+    conf = json.load(config_file)
 
 
 class Req():
@@ -11,7 +14,7 @@ class Req():
         self.meth = meth
         self.url = url
         self.body = body
-        self.d_url = 'https://reqres.in/api/'
+        self.d_url = conf['endpoint_list']['basic_url'] + '/'
 
     def send(self):
         '''Отправка запроса'''
