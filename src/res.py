@@ -1,5 +1,5 @@
 import json
-from src.errors import error
+from errors import error
 
 
 def res(data):

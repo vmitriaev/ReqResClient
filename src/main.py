@@ -1,6 +1,6 @@
 import json
-from src.req import Req
-from src.errors import error
+from req import Req
+from errors import error
 
 with open("config.json") as config_file:
     conf = json.load(config_file)
