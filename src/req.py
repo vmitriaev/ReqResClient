@@ -1,6 +1,6 @@
 import requests, json
 from errors import error
-from res import res
+from res import Res
 
 with open("config.json") as config_file:
     conf = json.load(config_file)
@@ -25,19 +25,19 @@ class Req():
 
         if s_meth == 'get':
             i = requests.get(url=f_url)
-            return res(i)
+            return Res(i)
 
         elif s_meth == 'post':
             i = requests.post(url=f_url, data=s_body)
-            return res(i)
+            return Res(i)
 
         elif s_meth == 'put':
             i = requests.put(url=f_url, data=s_body)
-            return res(i)
+            return Res(i)
 
         elif s_meth == 'patch':
             i = requests.patch(url=f_url, data=s_body)
-            return res(i)
+            return Res(i)
 
         elif s_meth == 'delete':
             i = requests.delete(url=f_url)

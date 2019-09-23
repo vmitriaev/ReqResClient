@@ -2,7 +2,7 @@ import json
 from errors import error
 
 
-def res(data):
+def Res(data):
     '''Вывод ответа'''
     j = json.dumps(data.json(), sort_keys=True, indent=2)
     c = data.status_code
